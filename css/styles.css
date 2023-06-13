@@ -2,13 +2,13 @@
   width: 90%;
   max-width: 1200px;
   min-height: 100vh;
+  padding-top: 2rem;
   margin-left: auto;
   margin-right: auto;
   background-color: #fafbfa;
-}
-
-h1 {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=styles.css.map */

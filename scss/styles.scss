@@ -1,14 +1,23 @@
 @use '../scss/mixins' as *;
 
+// button {
+//     display: block;
+// }
+
 .container {
     width: 90%;
     max-width: 1200px;
     min-height: 100vh;
+    padding-top: 2rem;
     margin-left: auto;
     margin-right: auto;
     background-color: #fafbfa;
+
+    // Centrando el contenido
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
-h1 {
-    text-align: center;
-}
+
+
