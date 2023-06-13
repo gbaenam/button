@@ -1,0 +1,20 @@
+{
+  "name": "11-button-new",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch scss:css",
+    "deploy": "vercel --prod"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.63.3"
+  },
+  "dependencies": {
+    "vercel": "^30.2.1"
+  }
+}

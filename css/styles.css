@@ -1,0 +1,14 @@
+.container {
+  width: 90%;
+  max-width: 1200px;
+  min-height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fafbfa;
+}
+
+h1 {
+  text-align: center;
+}
+
+/*# sourceMappingURL=styles.css.map */
