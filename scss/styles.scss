@@ -1,8 +1,14 @@
 @use '../scss/mixins' as *;
 
-// button {
-//     display: block;
-// }
+// Reset <button>
+button {
+    padding: 0;
+    border: none;
+    font-size: inherit;
+    font-family: inherit;
+    line-height: inherit;
+    background: transparent;
+}
 
 .container {
     width: 90%;
@@ -17,7 +23,33 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    // justify-content: space-between;
 }
 
+.button {
+    color: #fff;
+    padding: .15em 0;
+    font-weight: 500;
+    border: .125em solid;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;;
+    // min-width: var(--min-width-button);
+    // font-size: var(--font-size-button);
 
+    margin-bottom: 2rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+
+    &-blue {
+        background-color: blue;
+        border-color: blue;
+    }
+
+    &-round {
+        border-radius: 2em;
+    }
+}
 

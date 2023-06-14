@@ -1,3 +1,12 @@
+button {
+  padding: 0;
+  border: none;
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
+  background: transparent;
+}
+
 .container {
   width: 90%;
   max-width: 1200px;
@@ -9,6 +18,26 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+.button {
+  color: #fff;
+  padding: 0.15em 0;
+  font-weight: 500;
+  border: 0.125em solid;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 2rem;
+}
+.button:last-child {
+  margin-bottom: 0;
+}
+.button-blue {
+  background-color: blue;
+  border-color: blue;
+}
+.button-round {
+  border-radius: 2em;
 }
 
 /*# sourceMappingURL=styles.css.map */
