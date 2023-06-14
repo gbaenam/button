@@ -1,6 +1,7 @@
 button {
   padding: 0;
   border: none;
+  outline: none;
   font-size: inherit;
   font-family: inherit;
   line-height: inherit;
