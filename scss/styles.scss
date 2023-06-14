@@ -1,5 +1,21 @@
 @use '../scss/mixins' as *;
 
+
+
+// button-color
+$green-light: #00ff00;
+$green-dark: #00c600;
+$green-darker: #00aa00;
+
+$blue-light: #1F51FF;
+$blue-dark: #0034eb;
+$blue-darker: #002fd2;
+
+$orange-red-light: #ff6227;
+$orange-red-dark: #ff4500;
+$orange-red-darker:  #eb4000;
+
+
 // Reset <button>
 button {
     padding: 0;
@@ -28,15 +44,16 @@ button {
 
 .button {
     color: #fff;
-    padding: .15em 0;
+    padding: .3em 0;
     font-weight: 500;
     border: .125em solid;
     text-transform: uppercase;
     font-family: 'Poppins', sans-serif;;
-    // min-width: var(--min-width-button);
-    // font-size: var(--font-size-button);
+    min-width: 13em;
+    font-size: 1.2em;
 
     margin-bottom: 2rem;
+    cursor: pointer;
 
     &:last-child {
         margin-bottom: 0;
@@ -44,8 +61,20 @@ button {
 
 
     &-blue {
-        background-color: blue;
-        border-color: blue;
+        background-color: $blue-light;
+        border-color: $blue-light;
+    }
+
+    &-blue:hover {
+        background-color: $blue-dark;
+        border-color: $blue-dark;
+    }
+
+    &-blue:active {
+        background-color: $blue-darker;
+        // background-color: rgba($color: $blue-darker, $alpha: .6);
+        border-color: $blue-darker;
+        transform: scale(.99);
     }
 
     &-round {

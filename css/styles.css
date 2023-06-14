@@ -22,19 +22,31 @@ button {
 
 .button {
   color: #fff;
-  padding: 0.15em 0;
+  padding: 0.3em 0;
   font-weight: 500;
   border: 0.125em solid;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
+  min-width: 13em;
+  font-size: 1.2em;
   margin-bottom: 2rem;
+  cursor: pointer;
 }
 .button:last-child {
   margin-bottom: 0;
 }
 .button-blue {
-  background-color: blue;
-  border-color: blue;
+  background-color: #1F51FF;
+  border-color: #1F51FF;
+}
+.button-blue:hover {
+  background-color: #0034eb;
+  border-color: #0034eb;
+}
+.button-blue:active {
+  background-color: #002fd2;
+  border-color: #002fd2;
+  transform: scale(0.99);
 }
 .button-round {
   border-radius: 2em;
