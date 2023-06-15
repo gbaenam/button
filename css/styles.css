@@ -1,7 +1,6 @@
 button {
   padding: 0;
   border: none;
-  outline: none;
   font-size: inherit;
   font-family: inherit;
   line-height: inherit;
@@ -27,17 +26,24 @@ button:focus {
 .button {
   color: #fff;
   padding: 0.3em 0;
+  min-width: 13em;
   font-weight: 500;
+  font-size: 1.2em;
+  margin-bottom: 2rem;
   border: 0.125em solid;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  min-width: 13em;
-  font-size: 1.2em;
-  margin-bottom: 2rem;
-  cursor: pointer;
+}
+@media screen and (min-width: 1024px) {
+  .button {
+    cursor: pointer;
+  }
 }
 .button:last-child {
   margin-bottom: 0;
+}
+.button-round {
+  border-radius: 2em;
 }
 .button-blue {
   background-color: #1F51FF;
@@ -52,8 +58,30 @@ button:focus {
   border-color: #002fd2;
   transform: scale(0.99);
 }
-.button-round {
-  border-radius: 2em;
+.button-orange {
+  background-color: #ff6227;
+  border-color: #ff6227;
+  position: relative;
+}
+@media screen and (min-width: 1024px) {
+  .button-orange:hover {
+    background-color: #eb4000;
+  }
+}
+.button-orange:active {
+  transform: scale(0.98);
+  background-color: #eb4000;
+}
+.button-green {
+  background-color: #00c600;
+  border-color: #00c600;
+  position: relative;
+}
+.button-green:active {
+  background-color: #00aa00;
+  border-color: #00aa00;
+  top: 2px;
+  left: 2px;
 }
 
 /*# sourceMappingURL=styles.css.map */

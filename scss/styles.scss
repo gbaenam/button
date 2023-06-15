@@ -20,7 +20,6 @@ $orange-red-darker:  #eb4000;
 button {
     padding: 0;
     border: none;
-    outline: none;
     font-size: inherit;
     font-family: inherit;
     line-height: inherit;
@@ -31,13 +30,6 @@ button {
     }
 }
 
-// input,
-// button,
-// textarea {
-//     &:focus {
-//         outline: none;
-//     }
-// }
 
 .container {
     width: 90%;
@@ -58,20 +50,25 @@ button {
 .button {
     color: #fff;
     padding: .3em 0;
+    min-width: 13em;
     font-weight: 500;
+    font-size: 1.2em;
+    margin-bottom: 2rem;
     border: .125em solid;
     text-transform: uppercase;
-    font-family: 'Poppins', sans-serif;;
-    min-width: 13em;
-    font-size: 1.2em;
+    font-family: 'Poppins', sans-serif;
 
-    margin-bottom: 2rem;
-    cursor: pointer;
+    @include from(large) {
+        cursor: pointer;
+    }
 
     &:last-child {
         margin-bottom: 0;
     }
 
+    &-round {
+        border-radius: 2em;
+    }
 
     &-blue {
         background-color: $blue-light;
@@ -90,8 +87,37 @@ button {
         transform: scale(.99);
     }
 
-    &-round {
-        border-radius: 2em;
+    &-orange {
+        background-color: $orange-red-light;
+        border-color: $orange-red-light;
+        position: relative;
     }
+
+    @include from(large) {
+        &-orange:hover {
+            background-color: $orange-red-darker;
+        }
+    }
+
+    &-orange:active {
+        transform: scale(.98);
+        // top: 1px;
+        // left: 1px;
+        background-color: $orange-red-darker;
+    }
+
+    &-green {
+        background-color: $green-dark;
+        border-color: $green-dark;
+        position: relative;
+    }
+
+    &-green:active {
+        background-color: $green-darker;
+        border-color: $green-darker;
+        top: 2px;
+        left: 2px;
+    }
+
 }
 
