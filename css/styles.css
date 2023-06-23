@@ -29,15 +29,12 @@ button:focus {
   min-width: 13em;
   font-weight: 500;
   font-size: 1.2em;
+  position: relative;
   margin-bottom: 2rem;
   border: 0.125em solid;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-}
-@media screen and (min-width: 1024px) {
-  .button {
-    cursor: pointer;
-  }
+  text-shadow: 0.0625rem 0.0625rem rgba(0, 0, 0, 0.3);
 }
 .button:last-child {
   margin-bottom: 0;
@@ -45,43 +42,21 @@ button:focus {
 .button-round {
   border-radius: 2em;
 }
-.button-blue {
-  background-color: #1F51FF;
-  border-color: #1F51FF;
-}
-.button-blue:hover {
-  background-color: #0034eb;
-  border-color: #0034eb;
-}
-.button-blue:active {
-  background-color: #002fd2;
-  border-color: #002fd2;
-  transform: scale(0.99);
-}
-.button-orange {
-  background-color: #ff6227;
-  border-color: #ff6227;
-  position: relative;
+.button-green {
+  border-color: #00bb2d;
+  background-color: #00bb2d;
 }
 @media screen and (min-width: 1024px) {
-  .button-orange:hover {
-    background-color: #eb4000;
+  .button-green:hover {
+    cursor: pointer;
+    border-color: #24a319;
+    background-color: #24a319;
   }
 }
-.button-orange:active {
-  transform: scale(0.98);
-  background-color: #eb4000;
-}
-.button-green {
-  background-color: #00c600;
-  border-color: #00c600;
-  position: relative;
-}
 .button-green:active {
-  background-color: #00aa00;
-  border-color: #00aa00;
-  top: 2px;
-  left: 2px;
+  top: 0.125rem;
+  border-color: #247719;
+  background-color: #247719;
 }
 
 /*# sourceMappingURL=styles.css.map */
