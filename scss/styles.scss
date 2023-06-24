@@ -2,7 +2,7 @@
 
 
 
-// button-color
+// Variables de Colores
 $green-light: #00bb2d;
 $green-dark: #009100;
 $green-darker: #006d00;
@@ -49,20 +49,15 @@ button {
 .button {
     color: #fff;
     padding: .3em 0;
-    min-width: 14em;
+    min-width: 15em;
     font-weight: 500;
-    font-size: 1.2em;
+    font-size: 1.25em;
     position: relative;
     margin-bottom: 2rem;
     border: .125em solid;
     text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
     text-shadow: 0.0625rem 0.0625rem rgba(0,0,0,.3);
-
-    @include from(412px) {
-        min-width: 16em;
-        font-size: 1.3em;
-    }
 
     &:last-child {
         margin-bottom: 0;
@@ -127,6 +122,5 @@ button {
         border-color: $orange-red-darker;
         background-color: $orange-red-darker;
     }
-
 }
 
