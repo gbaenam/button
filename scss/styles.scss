@@ -49,9 +49,7 @@ button {
 .button {
     color: #fff;
     padding: .3em 0;
-    min-width: 15em;
     font-weight: 500;
-    font-size: 1.25em;
     position: relative;
     margin-bottom: 2rem;
     border: .125em solid;
@@ -61,6 +59,16 @@ button {
 
     &:last-child {
         margin-bottom: 0;
+    }
+
+    &-short {
+        min-width: 12em;
+        font-size: 1.1em;
+    }
+
+    &-long {
+        min-width: 15em;
+        font-size: 1.25em;
     }
 
     &-round {
