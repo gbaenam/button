@@ -52,17 +52,45 @@ button:focus {
   border-color: #00bb2d;
   background-color: #00bb2d;
 }
+.button-blue {
+  border-color: #0080ff;
+  background-color: #0080ff;
+}
+.button-orange-red {
+  border-color: #ff6227;
+  background-color: #ff6227;
+}
 @media screen and (min-width: 1024px) {
-  .button-green:hover {
+  .button:hover {
     cursor: pointer;
+  }
+  .button-green:hover {
     border-color: #009100;
     background-color: #009100;
   }
+  .button-blue:hover {
+    border-color: #1f51ff;
+    background-color: #1f51ff;
+  }
+  .button-orange-red:hover {
+    border-color: #e63e00;
+    background-color: #e63e00;
+  }
+}
+.button:active {
+  top: 0.125rem;
 }
 .button-green:active {
-  top: 0.125rem;
   border-color: #006d00;
   background-color: #006d00;
+}
+.button-blue:active {
+  border-color: #002fd2;
+  background-color: #002fd2;
+}
+.button-orange-red:active {
+  border-color: #b33000;
+  background-color: #b33000;
 }
 
 /*# sourceMappingURL=styles.css.map */

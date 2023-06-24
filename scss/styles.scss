@@ -7,13 +7,13 @@ $green-light: #00bb2d;
 $green-dark: #009100;
 $green-darker: #006d00;
 
-$blue-light: #1F51FF;
-$blue-dark: #0034eb;
+$blue-light: #0080ff;
+$blue-dark: #1f51ff;
 $blue-darker: #002fd2;
 
 $orange-red-light: #ff6227;
-$orange-red-dark: #ff4500;
-$orange-red-darker:  #eb4000;
+$orange-red-dark: #e63e00;
+$orange-red-darker: #b33000;
 
 
 // Reset <button>
@@ -44,7 +44,6 @@ button {
     display: flex;
     align-items: center;
     flex-direction: column;
-    // justify-content: space-between;
 }
 
 .button {
@@ -78,18 +77,55 @@ button {
         background-color: $green-light;
     }
 
-    &-green:hover {
-        @include from(large) {
+    &-blue {
+        border-color: $blue-light;
+        background-color: $blue-light;
+    }
+
+    &-orange-red {
+        border-color: $orange-red-light;
+        background-color: $orange-red-light;
+    }
+
+    @include from(large) {
+
+        &:hover {
             cursor: pointer;
+        }
+
+        &-green:hover {
             border-color: $green-dark;
             background-color: $green-dark;
         }
+
+        &-blue:hover {
+            border-color: $blue-dark;
+            background-color: $blue-dark;
+        }
+
+        &-orange-red:hover {
+            border-color: $orange-red-dark;
+            background-color: $orange-red-dark;
+        }
+    }
+
+    &:active {
+        top: 0.125rem;
     }
 
     &-green:active {
-        top: 0.125rem;
         border-color: $green-darker;
         background-color: $green-darker;
+    }
+
+    &-blue:active {
+        border-color: $blue-darker;
+        background-color: $blue-darker;
+    }
+
+    &-orange-red:active {
+        border-color: $orange-red-darker;
+        background-color: $orange-red-darker;
     }
 
 }
