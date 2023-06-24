@@ -4,8 +4,8 @@
 
 // button-color
 $green-light: #00bb2d;
-$green-dark: #24a319;
-$green-darker: #247719;
+$green-dark: #009100;
+$green-darker: #006d00;
 
 $blue-light: #1F51FF;
 $blue-dark: #0034eb;
@@ -50,7 +50,7 @@ button {
 .button {
     color: #fff;
     padding: .3em 0;
-    min-width: 13em;
+    min-width: 14em;
     font-weight: 500;
     font-size: 1.2em;
     position: relative;
@@ -59,6 +59,11 @@ button {
     text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
     text-shadow: 0.0625rem 0.0625rem rgba(0,0,0,.3);
+
+    @include from(412px) {
+        min-width: 16em;
+        font-size: 1.3em;
+    }
 
     &:last-child {
         margin-bottom: 0;

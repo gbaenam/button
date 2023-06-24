@@ -26,7 +26,7 @@ button:focus {
 .button {
   color: #fff;
   padding: 0.3em 0;
-  min-width: 13em;
+  min-width: 14em;
   font-weight: 500;
   font-size: 1.2em;
   position: relative;
@@ -35,6 +35,12 @@ button:focus {
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
   text-shadow: 0.0625rem 0.0625rem rgba(0, 0, 0, 0.3);
+}
+@media screen and (min-width: 412px) {
+  .button {
+    min-width: 16em;
+    font-size: 1.3em;
+  }
 }
 .button:last-child {
   margin-bottom: 0;
@@ -49,14 +55,14 @@ button:focus {
 @media screen and (min-width: 1024px) {
   .button-green:hover {
     cursor: pointer;
-    border-color: #24a319;
-    background-color: #24a319;
+    border-color: #009100;
+    background-color: #009100;
   }
 }
 .button-green:active {
   top: 0.125rem;
-  border-color: #247719;
-  background-color: #247719;
+  border-color: #006d00;
+  background-color: #006d00;
 }
 
 /*# sourceMappingURL=styles.css.map */
